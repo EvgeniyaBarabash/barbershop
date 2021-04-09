@@ -69,7 +69,6 @@ body {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   color: var(--alfa-title-color);
 }
 .text-title {
@@ -77,4 +76,113 @@ body {
   font-style: normal;
   font-weight: 400;
   color: var(--hero-text-cl);
+}
+.title-section {
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: var(--title-color);
+}
+/* About us */
+.about {
+  color: var(--main-text-color);
+}
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  background-color: transparent;
+}
+.btn:hover,
+.btn:focus {
+  color: var(--hero-title-color);
+  background-color: var(--accent-color);
+}
+/* Услуги и цены */
+.dark-bg .title-label {
+  color: var(--alfa-title-color);
+}
+.dark-bg .title-section {
+  color: var(--hero-title-color);
+}
+.dark-bg .btn {
+  color: var(--hero-title-color);
+}
+/* Статистика */
+.number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: var(--title-color);
+}
+.plus {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+}
+.number-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+  color: var(--title-color);
+}
+/* наша команда */
+.team-item-name {
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+.team-item-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.team-item {
+  text-align: center;
+}
+/* контакты*/
+.address .link,
+.time-work {
+  color: var(--hero-text-cl);
+}
+.work-time .title-label {
+  color: var(--hero-title-color);
+}
+/* футер */
+.footer,
+.footer-list {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--hero-text-cl);
+}
+.footer-list {
+  color: var(--title-color);
 }
