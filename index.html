@@ -42,7 +42,7 @@
             <li class="tel-nav-item">
               <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
             </li>
-            <li class="tel-nav-item">
+            <li>
               <a class="link btn" href="">онлайн-запись</a>
             </li>
           </ul>
@@ -85,63 +85,89 @@
     </header>
     <!-- Лучший Барершоп -->
     <main>
-      <section id="about">
-        <ul class="list">
-          <li>
-            <img
-              src="./images/about/img-1.jpg"
-              alt="Барбер за работой"
-              width="270"
-              height="445"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/about/img-2.jpg"
-              alt="Барбер стрижет бритвой"
-              width="270"
-              height="445"
-            />
-          </li>
-        </ul>
-        <p class="title-label">О нас</p>
-        <h2 class="title-section">Лучший Барбершоп твоего города</h2>
-        <p class="about text-title">
-          Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
-          нам.
-        </p>
-        <p class="about-text">
-          Мы команда, которая никогда не останавливается на достигнутом и жаждет
-          перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не
-          сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
-          волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам
-          приходит!
-        </p>
-        <button class="btn" type="button">онлайн-запись</button>
+      <section id="about" class="section about">
+        <div class="container flexbox">
+          <ul class="list flexbox content-box">
+            <li class="content-box">
+              <img
+                src="./images/about/img-1.jpg"
+                alt="Барбер за работой"
+                width="270"
+                height="445"
+              />
+            </li>
+            <li class="content-box">
+              <img
+                src="./images/about/img-2.jpg"
+                alt="Барбер стрижет бритвой"
+                width="270"
+                height="445"
+              />
+            </li>
+          </ul>
+          <div class="content-box">
+            <p class="title-label">О нас</p>
+            <h2 class="title-section">Лучший Барбершоп твоего города</h2>
+            <p class="about text-title">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе
+              точно к нам.
+            </p>
+            <p class="about-text">
+              Мы команда, которая никогда не останавливается на достигнутом и
+              жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+              никогда не сможешь быть прежним. Мы команда, которая всегда с
+              клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <button class="btn" type="button">онлайн-запись</button>
+          </div>
+        </div>
       </section>
       <!-- Услуги и цены -->
-      <section class="dark-bg" id="price">
-        <p class="title-label">Проведи время в компании лучших мастеров</p>
-        <h2 class="title-section">Услуги и цены</h2>
-        <div>
-          <ul class="list text-title">
-            <li><span>Мужская стрижка</span><span>от 300 грн.</span></li>
-            <li><span>Стрижка бороды</span><span>от 200 грн.</span></li>
-            <li><span>Стрижка усов</span><span>от 200 грн.</span></li>
-            <li><span>Бритье опасной бритвой</span>от 200 грн.<span></span></li>
-          </ul>
+      <section class="dark-bg price" id="price">
+        <div class="section container">
+          <p class="title-label">Проведи время в компании лучших мастеров</p>
+          <h2 class="title-section">Услуги и цены</h2>
+          <div class="price-wrap">
+            <ul class="list price-list text-title">
+              <li class="price-item">
+                <span class="price-serv">Мужская стрижка</span
+                ><span>от 300 грн.</span>
+              </li>
+              <li class="price-item">
+                <span class="price-serv">Стрижка бороды</span
+                ><span>от 200 грн.</span>
+              </li>
+              <li class="price-item">
+                <span class="price-serv">Стрижка усов</span
+                ><span>от 200 грн.</span>
+              </li>
+              <li class="price-item">
+                <span class="price-serv">Бритье опасной бритвой</span
+                ><span>от 200 грн.</span>
+              </li>
+            </ul>
+            <ul class="list price-list text-title">
+              <li class="price-item">
+                <span class="price-serv">Cтрижка у стажера</span
+                ><span>от 50 грн.</span>
+              </li>
+              <li class="price-item">
+                <span class="price-serv">Стрижка под насадку</span
+                ><span>от 200 грн.</span>
+              </li>
+              <li class="price-item">
+                <span class="price-serv">Детская стрижка (до 12 лет)</span
+                ><span>от 300 грн.</span>
+              </li>
+              <li class="price-item">
+                <span class="price-serv">Камуфлирование седины</span>от 200
+                грн.<span></span>
+              </li>
+            </ul>
+          </div>
+          <a class="link price btn" href="">онлайн-запись</a>
         </div>
-        <div>
-          <ul class="list text-title">
-            <li><span>Cтрижка у стажера</span><span>от 50 грн.</span></li>
-            <li><span>Стрижка под насадку</span><span>от 200 грн.</span></li>
-            <li>
-              <span>Детская стрижка (до 12 лет)</span><span>от 300 грн.</span>
-            </li>
-            <li><span>Камуфлирование седины</span>от 200 грн.<span></span></li>
-          </ul>
-        </div>
-        <a class="link btn" href="">онлайн-запись</a>
       </section>
       <!-- Статистика -->
       <section>

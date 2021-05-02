@@ -9,6 +9,7 @@
   --accent-color: #ff6c00;
   --dark-bg: #191c26;
   --second-bg: #f7f7f7;
+  --bg-color: #ffffff;
 }
 body {
   font-family: var(--main-font);
@@ -16,6 +17,16 @@ body {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 20px;
 }
 .container {
   width: 1200px;
@@ -61,6 +72,10 @@ html {
   width: 1px !important;
   overflow: hidden;
 }
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 /* Hedear */
 .dark-bg.photo .container {
   position: relative;
@@ -69,17 +84,39 @@ html {
   background-position: top right;
   margin: 0;
 }
-.socials-list {
+.side-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 115px;
+  height: 100%;
+  background-color: var(--bg-color);
+  padding-bottom: 40px;
+}
+.side-bar .socials-list {
+  display: flex;
+  align-items: center;
   transform: rotate(-90deg) translateX(50%);
 }
-
+.socials-list.line:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: currentColor;
 }
+.socials-item {
+  margin-left: 40px;
+}
+
 .top-panel {
   display: flex;
   align-items: center;
   padding-top: 32px;
-
-  margin-bottom: 184px;
 }
 .menu {
   display: flex;
@@ -98,10 +135,12 @@ html {
 .logo {
   display: inline-block;
   margin-right: 70px;
+  z-index: 5;
 }
 .address {
   font-style: normal;
 }
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -125,25 +164,20 @@ html {
   letter-spacing: 0.1em;
   color: var(--hero-title-color);
 }
-.tel-nav-item .btn {
+.tel-nav.list .btn {
   margin-left: 40px;
+  border: transparent;
+}
+.tel-nav.list .btn:hover {
   border: 1px solid var(--accent-color);
-  border-radius: 25px;
-  padding: 12px 20px;
+  background-color: transparent;
 }
-.side-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 155px;
-  height: 100%;
-  background-color: var(--second-bg);
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-.hero-content{
+
+.hero-content {
   width: calc(100% / 12 * 5);
+  padding-top: 150px;
+  padding-bottom: 206px;
+  margin-left: 200px;
 }
 .dark-bg {
   background-color: var(--dark-bg);
@@ -154,6 +188,7 @@ html {
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
 
   color: var(--hero-title-color);
 }
@@ -171,6 +206,7 @@ html {
   font-style: normal;
   font-weight: 400;
   color: var(--hero-text-cl);
+  margin-bottom: 0;
 }
 .title-section {
   font-family: var(--title-font);
@@ -182,8 +218,17 @@ html {
   color: var(--title-color);
 }
 /* About us */
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .about {
   color: var(--main-text-color);
+}
+.content-box {
+  flex-basis: calc((100% - 30px) / 2);
 }
 .about-text {
   font-size: 14px;
@@ -201,6 +246,9 @@ html {
   text-transform: uppercase;
   color: var(--title-color);
   background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  padding: 12px 20px;
 }
 .btn:hover,
 .btn:focus {
@@ -208,6 +256,43 @@ html {
   background-color: var(--accent-color);
 }
 /* Услуги и цены */
+.price {
+  background-color: var(--dark-bg);
+
+  background-image: url(/images/price-img.jpg);
+}
+
+.price-wrap {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.price-serv {
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+.price-serv::after {
+  content: "";
+  display: block;
+  height: 1px;
+  flex-grow: 1;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+.price-item {
+  display: flex;
+}
+.price-list {
+  width: 50%;
+  padding: 30px 40px;
+}
+.price.btn {
+  justify-content: center;
+  align-items: center;
+}
+.price .title-section {
+  margin: 0;
+}
 .dark-bg .title-label {
   color: var(--alfa-title-color);
 }
