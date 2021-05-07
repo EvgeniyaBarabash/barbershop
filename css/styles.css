@@ -361,6 +361,7 @@ html {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.38;
+  vertical-align: top;
 }
 .number-text {
   font-weight: 600;
@@ -532,4 +533,18 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+}
+.close-btn:hover {
+  background-color: var(--accent-color);
 }
