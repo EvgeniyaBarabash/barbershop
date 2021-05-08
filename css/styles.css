@@ -548,3 +548,28 @@ html {
 .close-btn:hover {
   background-color: var(--accent-color);
 }
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form-coments {
+  resize: none;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid var(--hero-text-cl);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-top: 44px;
+}
+.form-input {
+  background-color: transparent;
+  border-bottom: 1px solid var(--hero-text-cl);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.checkbox-link {
+  color: var(--accent-color);
+}
