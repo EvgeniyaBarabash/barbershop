@@ -302,12 +302,12 @@
         <section class="online content-box">
           <h2 class="title-section">Онлайн-запись</h2>
           <form class="form">
-            <input type="text" name="user-name" class="form-input" placeholder="Имя" required>
-            <input type="tel" name="user-phone" class="form-input" placeholder="Телефон" required>
+            <input type="text" name="user-name" class="form-input" placeholder="Имя" required pattern="^[a-zA-ZА-Яа-яЁё\s]+$" autocomplete="off">
+            <input type="tel" name="user-phone" class="form-input" placeholder="Телефон" required pattern="[0-9]{10}" autocomplete="off">
             <textarea name="user-coments" placeholder="Сообщение" class="form-coments"></textarea>
-            <input type="checkbox" name="checkbox">
-            <label for="checkbox">Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия договора</a></label>
-        <button type="submit" class="btn">Отправить</button>
+            <input type="checkbox" name="checkbox" class="checkbox-input" id="checkbox">
+            <label for="checkbox" class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия договора</a></label>
+        <button type="submit" class="btn form-btn">Отправить</button>
           </form>
         </section>
         <section class="contact content-box">
