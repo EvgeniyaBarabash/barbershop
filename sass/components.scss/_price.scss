@@ -1,0 +1,66 @@
+/* Услуги и цены */
+.price {
+  background-image: url(/images/img-min.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.price__wrap {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.price__serv {
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+.price__serv::after {
+  content: "";
+  display: block;
+  height: 1px;
+  flex-grow: 1;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+.price__item {
+  display: flex;
+}
+.price__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.price__list {
+  width: 50%;
+  padding: 30px 40px;
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+.price__list:last-child {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
+}
+.price__btn {
+  @extend %btn;
+}
+.price__button {
+  display: flex;
+  justify-content: center;
+}
+.price__title {
+  margin: 0;
+}
+.price__label {
+  color: var(--alfa-title-color);
+}
+.price__title {
+  color: var(--hero-title-color);
+}
+.price__btn {
+  color: var(--hero-title-color);
+}

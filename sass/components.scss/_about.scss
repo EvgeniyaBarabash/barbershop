@@ -1,0 +1,26 @@
+/* About us */
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about {
+  color: var(--main-text-color);
+}
+.content-box {
+  flex-basis: calc((100% - 30px) / 2);
+}
+.about__text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  margin-bottom: 40px;
+}
+.about__text--title {
+  margin-bottom: 20px;
+}
+.about__btn {
+  @extend %btn;
+}

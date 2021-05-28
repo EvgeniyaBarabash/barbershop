@@ -17,7 +17,7 @@
   background-color: var(--bg-color);
   padding-bottom: 40px;
 }
-.side-bar .socials-list {
+.socials__list {
   display: flex;
   align-items: center;
   transform: rotate(-90deg) translateX(50%);
@@ -30,7 +30,7 @@
   margin-right: 20px;
   background-color: currentColor;
 }
-.socials-item {
+.socials__item {
   margin-left: 40px;
 }
 
@@ -107,7 +107,7 @@
 .dark-bg {
   background-color: var(--dark-bg);
 }
-.page-title {
+.hero-content__page-title {
   font-family: var(--title-font);
   font-weight: 700;
   font-size: 72px;
@@ -117,7 +117,7 @@
 
   color: var(--hero-title-color);
 }
-.title-label {
+.hero-content__title {
   display: flex;
   align-items: center;
   font-family: var(--main-font);
@@ -128,7 +128,7 @@
   text-transform: uppercase;
   color: var(--alfa-title-color);
 }
-.text-title {
+.hero-content__text {
   font-family: var(--main-text-colors);
   font-style: normal;
   font-weight: 400;
