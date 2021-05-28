@@ -1012,6 +1012,7 @@ html {
   display: flex;
   align-items: flex-end;
   flex-grow: 1;
+  color: var(--hero-text-cl);
 }
 
 .price__serv::after {
@@ -1020,6 +1021,10 @@ html {
   height: 1px;
   flex-grow: 1;
   background-color: rgba(157, 164, 189, 0.12);
+}
+
+.price-serv--color {
+  color: var(--hero-text-cl);
 }
 
 .price__item {
