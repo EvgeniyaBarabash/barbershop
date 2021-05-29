@@ -11,16 +11,39 @@
 .content-box {
   flex-basis: calc((100% - 30px) / 2);
 }
-.about__text {
+.content-box__text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   margin-bottom: 40px;
 }
-.about__text--title {
+.content-box__text--title {
   margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--main-text-color);
 }
 .about__btn {
   @extend %btn;
+}
+.content-box__title {
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  color: var(--title-color);
+}
+.content-box__label {
+  display: flex;
+  align-items: center;
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
 }

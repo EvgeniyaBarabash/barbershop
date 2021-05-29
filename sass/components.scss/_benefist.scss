@@ -1,0 +1,44 @@
+/* Статистика */
+.benefits__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+.benefits__item {
+  text-align: center;
+  max-width: 170px;
+  padding: 20px 24px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  background-color: var(--second-bg);
+}
+.benefits__item:nth-of-type(2n) {
+  transform: translateY(30px);
+}
+.benefits__item--number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+  color: var(--title-color);
+}
+.benefits__item--plus {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  vertical-align: top;
+}
+.benefits__item--number-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+  color: var(--title-color);
+  margin-bottom: 0;
+}

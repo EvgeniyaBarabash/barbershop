@@ -1,0 +1,69 @@
+/* наша команда */
+.team {
+  background-color: var(--second-bg);
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.team__item--name {
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+.team__item--position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.team__item {
+  text-align: center;
+  max-width: 370px;
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 3 * 30px) / 3);
+}
+.content-box__title--team {
+  margin-bottom: 44px;
+}
+.social__icons {
+  display: flex;
+  justify-content: center;
+}
+.social__icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social__icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--bg-color);
+  color: black;
+  border-radius: 50%;
+}
+.social__icons-link:hover .social__icons-svg {
+  fill: var(--accent-color);
+  transition: fill var(--transition-duration) var(--timing-function);
+}
+.social__icons-svg {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+  transition: fill var(--transition-duration) var(--timing-function);
+}
+.team__item--galery {
+  max-width: 270px;
+  flex-basis: calc((100% - 4 * 30px) / 4);
+}
+.content-box__label--galery {
+  margin-bottom: 44px;
+}
