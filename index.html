@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BarberShop</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./fonts/fonts.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="./css/main.min.css" />
-</head>
-
-<body>
-  <!-- Хедер -->
-  <header class="dark-bg">
+  <body>
+    <!-- Хедер -->
+    <!-- <header class="dark-bg">
     <div class="container hero-header">
       <section class="top-panel">
         <nav class="site-nav site-nav__heder">
@@ -39,10 +44,10 @@
             <a class="link tel-nav__btn" href="">онлайн-запись</a>
           </li>
         </ul>
-      </section>
-      <!-- Герой -->
+      </section>  -->
+    <!-- Герой -->
 
-      <section class="">
+    <!-- <section class="">
         <div class="hero-content">
           <p class="hero-content__title line" lang="en">
             A hair salon for men in Kyiv
@@ -65,39 +70,51 @@
         </div>
       </section>
     </div>
-  </header>
-  <!-- Лучший Барершоп -->
-  <main>
-    <section id="about" class="section about">
-      <div class="container flexbox">
-        <ul class="list flexbox content-box">
-          <li class="content-box">
-            <img src="./images/about/img-1.jpg" alt="Барбер за работой" width="270" height="445" />
-          </li>
-          <li class="content-box">
-            <img src="./images/about/img-2.jpg" alt="Барбер стрижет бритвой" width="270" height="445" />
-          </li>
-        </ul>
-        <div class="content-box">
-          <p class="content-box__label line">О нас</p>
-          <h2 class="content-box__title">Лучший Барбершоп твоего города</h2>
-          <p class="content-box__text--title">
-            Если ты хочешь добавить в свой образ больше уверенности – тебе
-            точно к нам.
-          </p>
-          <p class="content-box__text">
-            Мы команда, которая никогда не останавливается на достигнутом и
-            жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
-            никогда не сможешь быть прежним. Мы команда, которая всегда с
-            клиентами "на одной волне". Поэтому, мы всегда готовы
-            усовершенствовать каждого, кто к нам приходит!
-          </p>
-          <button class="about__btn" type="button" data-modal-open>онлайн-запись</button>
+  </header> -->
+    <!-- Лучший Барершоп -->
+    <main>
+      <section id="about" class="section about">
+        <div class="container flexbox">
+          <ul class="list flexbox content-box content-box--photo">
+            <li class="content-box">
+              <img
+                src="./images/about/img-1.jpg"
+                alt="Барбер за работой"
+                width="270"
+                height="445"
+              />
+            </li>
+            <li class="content-box">
+              <img
+                src="./images/about/img-2.jpg"
+                alt="Барбер стрижет бритвой"
+                width="270"
+                height="445"
+              />
+            </li>
+          </ul>
+          <div class="content-box">
+            <p class="content-box__label line">О нас</p>
+            <h2 class="content-box__title">Лучший Барбершоп твоего города</h2>
+            <p class="content-box__text--title">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе
+              точно к нам.
+            </p>
+            <p class="content-box__text">
+              Мы команда, которая никогда не останавливается на достигнутом и
+              жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+              никогда не сможешь быть прежним. Мы команда, которая всегда с
+              клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <button class="about__btn" type="button" data-modal-open>
+              онлайн-запись
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- Услуги и цены -->
-    <section class="dark-bg price" id="price">
+      </section>
+      <!-- Услуги и цены -->
+      <!-- <section class="dark-bg price" id="price">
       <div class="section container">
         <p class="price__label line">
           Проведи время в компании лучших мастеров
@@ -140,39 +157,54 @@
       </div>
     </section>
     <!-- Статистика -->
-    <section class="section">
-      <div class="container flexbox">
-        <ul class="list content-box benefits__list">
-          <li class="benefits__item">
-            <span class="benefits__item--number">100<sup class="benefits__item--plus">+</sup></span>
-            <p class="benefits__item--number-text">Подарков постоянным клиентам</p>
-          </li>
-          <li class="benefits__item">
-            <span class="benefits__item--number">600<sup class="benefits__item--plus">+</sup></span>
-            <p class="benefits__item--number-text">Довольных клиентов в день</p>
-          </li>
-          <li class="benefits__item">
-            <span class="benefits__item--number">50<sup class="benefits__item--plus">+</sup></span>
-            <p class="benefits__item--number-text">Наград за отличный сервис</p>
-          </li>
-          <li class="benefits__item">
-            <span class="benefits__item--number">20<sup class="benefits__item--plus">+</sup></span>
-            <p class="benefits__item--number-text">Лучших мастеров Киева</p>
-          </li>
-        </ul>
+      <!-- <section class="section">
+        <div class="container flexbox">
+          <ul class="list content-box benefits__list">
+            <li class="benefits__item">
+              <span class="benefits__item--number"
+                >100<sup class="benefits__item--plus">+</sup></span
+              >
+              <p class="benefits__item--number-text">
+                Подарков постоянным клиентам
+              </p>
+            </li>
+            <li class="benefits__item">
+              <span class="benefits__item--number"
+                >600<sup class="benefits__item--plus">+</sup></span
+              >
+              <p class="benefits__item--number-text">
+                Довольных клиентов в день
+              </p>
+            </li>
+            <li class="benefits__item">
+              <span class="benefits__item--number"
+                >50<sup class="benefits__item--plus">+</sup></span
+              >
+              <p class="benefits__item--number-text">
+                Наград за отличный сервис
+              </p>
+            </li>
+            <li class="benefits__item">
+              <span class="benefits__item--number"
+                >20<sup class="benefits__item--plus">+</sup></span
+              >
+              <p class="benefits__item--number-text">Лучших мастеров Киева</p>
+            </li>
+          </ul>
 
-        <div class="content-box">
-          <p class="content-box__label line">старая традиционная школа</p>
-          <h2 class="content-box__title">Почему приходят именно к нам?</h2>
-          <p class="content-box__text--title">
-            О нас говорят только хорошее. Но лучше 1 раз увидеть и
-            прочувствовать, чем 10 раз прочитать.
-          </p>
+          <div class="content-box">
+            <p class="content-box__label line">старая традиционная школа</p>
+            <h2 class="content-box__title">Почему приходят именно к нам?</h2>
+            <p class="content-box__text--title">
+              О нас говорят только хорошее. Но лучше 1 раз увидеть и
+              прочувствовать, чем 10 раз прочитать.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- Team -->
-    <section id="team" class="section team">
+      </section> -->
+      -->
+      <!-- Team -->
+       <section id="team" class="section team">
       <div class="container">
         <p class="content-box__label line">для настоящих ценителей атмосферы</p>
         <h2 class="content-box__title content-box__title--team">Наши мастера</h2>
@@ -272,9 +304,9 @@
           </li>
         </ul>
       </div>
-    </section>
-    <!-- Галерея работ -->
-    <section class="section">
+    </section> 
+      <!-- Галерея работ -->
+      <!-- <section class="section">
       <div class="container">
         <h2 class="visually-hidden">Галерея работ</h2>
         <p class="content-box__label content-box__label--galery line">
@@ -295,9 +327,9 @@
           </li>
         </ul>
       </div>
-    </section>
-    <!-- Контакты -->
-    <div class="dark-bg">
+    </section> -->
+      <!-- Контакты -->
+      <!-- <div class="dark-bg">
       <div class="container flexbox">
         <section class="online content-box">
           <h2 class="content-box__title content-box__title--white">Онлайн-запись</h2>
@@ -340,9 +372,9 @@
           </section>
         </section>
       </div>
-    </div>
-  </main>
-  <footer class="footer-section">
+    </div> -->
+    </main>
+    <!-- <footer class="footer-section">
     <div class="container">
       <p class="footer">&copy; Copyright 2020</p>
       <ul class="list socials__list line">
@@ -354,16 +386,15 @@
         </li>
       </ul>
     </div>
-  </footer>
-  <div class="backdrop is-hidden" data-modal>
+  </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal" >
       <button class="close-btn" type="button" data-modal-close>X</button>
       <p class="title-section">Title</p>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil itaque molestiae quas dolorum cumque sed explicabo incidunt repudiandae vitae, obcaecati consequuntur molestias adipisci sequi illo ex rem dolores quaerat facilis!</p>
       
     </div>
-  </div>
-  <script src="./js/modal.js"></script>
-</body>
-
+  </div> -->
+    <script src="./js/modal.js"></script>
+  </body>
 </html>
