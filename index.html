@@ -54,12 +54,12 @@
           </p>
         </div>
         <div class="side-bar">
-          <ul class="list socials__list line">
+          <ul class="list socials__list socials__list--position line">
             <li class="socials__item">
-              <a class="link" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">Instagram</a>
+              <a class="link socials__link" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">Instagram</a>
             </li>
             <li class="socials__item">
-              <a class="link" href="https://www.youtube.com/" rel="noopener noreferrer" target="_blank">Youtube</a>
+              <a class="link socials__link" href="https://www.youtube.com/" rel="noopener noreferrer" target="_blank">Youtube</a>
             </li>
           </ul>
         </div>
@@ -175,7 +175,7 @@
     <section id="team" class="section team">
       <div class="container">
         <p class="content-box__label line">для настоящих ценителей атмосферы</p>
-        <h2 class="content-box__title--team content-box__title">Наши мастера</h2>
+        <h2 class="content-box__title content-box__title--team">Наши мастера</h2>
         <ul class="list card-set">
           <li class="team__item">
             <img src="./images/team/img1.jpg" width="370" height="346" alt="Джон Смит" />
@@ -300,18 +300,18 @@
     <div class="dark-bg">
       <div class="container flexbox">
         <section class="online content-box">
-          <h2 class="content-box__title">Онлайн-запись</h2>
+          <h2 class="content-box__title content-box__title--white">Онлайн-запись</h2>
           <form class="form">
-            <input type="form__text" name="user-name" class="form-input" placeholder="Имя" required pattern="^[a-zA-ZА-Яа-яЁё\s]+$" autocomplete="off">
-            <input type="form__tel" name="user-phone" class="form-input" placeholder="Телефон" required pattern="[0-9]{10}" autocomplete="off">
-            <textarea name="user-coments" placeholder="Сообщение" class="form-coments"></textarea>
-            <input type="checkbox" name="checkbox" class="checkbox-input" id="checkbox">
-            <label for="checkbox" class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия договора</a></label>
-        <button type="submit" class="btn form-btn">Отправить</button>
+            <input type="form__text" name="user-name" class="form__input" placeholder="Имя" required pattern="^[a-zA-ZА-Яа-яЁё\s]+$" autocomplete="off">
+            <input type="form__tel" name="user-phone" class="form__input" placeholder="Телефон" required pattern="[0-9]{10}" autocomplete="off">
+            <textarea name="form-coments" placeholder="Сообщение" class="form__coments"></textarea>
+            <input type="checkbox" name="checkbox" class="checkbox__input" id="checkbox">
+            <label for="checkbox" class="checkbox__label">Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox__link">Условия договора</a></label>
+        <button type="submit" class="form__btn">Отправить</button>
           </form>
         </section>
         <section class="contact content-box">
-          <h2 class="content-box__title">Кoнтакты</h2>
+          <h2 class="content-box__title content-box__title--white">Кoнтакты</h2>
           <address class="address">
             <ul class="list address__list">
               <li class="address__item">
@@ -323,19 +323,19 @@
                   ул. Васильковая, 7А Киев, 08132</a>
               </li>
               <li class="address__item">
-                <a class="link adress-link" href="tel:+380441111111"><svg class="address-icon">
+                <a class="link adress__link" href="tel:+380441111111"><svg class="address__icon">
                     <use href="./images/symbol-defs.svg#phone"></use>
                   </svg></use></svg>+38 044 111 11 11</a>
               </li>
               <li class="address__item">
-                <a class="link adress__link" href="mailto:barbershop@email.com"><svg class="address-icon">
+                <a class="link adress__link" href="mailto:barbershop@email.com"><svg class="address__icon">
                     <use href="./images/symbol-defs.svg#mail"></use>
                   </svg></use></svg>barbershop@email.com</a>
               </li>
             </ul>
           </address>
           <section class="work-time">
-            <p class="title-label line">время работы</p>
+            <p class="work-time__title-label line">время работы</p>
             <p class="time-work">Ежедневно с 9:00 до 22:00</p>
           </section>
         </section>
@@ -345,12 +345,12 @@
   <footer class="footer-section">
     <div class="container">
       <p class="footer">&copy; Copyright 2020</p>
-      <ul class="list socials-list line">
-        <li class="socials-item">
-          <a class="link" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">Instagram</a>
+      <ul class="list socials__list line">
+        <li class="socials__item">
+          <a class="link socials__link" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">Instagram</a>
         </li>
-        <li class="socials-item">
-          <a class="link" href="https://www.youtube.com/" rel="noopener noreferrer" target="_blank">Youtube</a>
+        <li class="socials__item">
+          <a class="link socials__link" href="https://www.youtube.com/" rel="noopener noreferrer" target="_blank">Youtube</a>
         </li>
       </ul>
     </div>

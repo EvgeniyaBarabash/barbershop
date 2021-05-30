@@ -61,6 +61,8 @@
 }
 .price__label {
   color: var(--alfa-title-color);
+  display: flex;
+  align-items: center;
 }
 .price__title {
   color: var(--hero-title-color);

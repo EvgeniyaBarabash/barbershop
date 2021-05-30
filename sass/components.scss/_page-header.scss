@@ -20,6 +20,8 @@
 .socials__list {
   display: flex;
   align-items: center;
+}
+.socials__list--position {
   transform: rotate(-90deg) translateX(50%);
 }
 .line:before {
@@ -33,7 +35,14 @@
 .socials__item {
   margin-left: 40px;
 }
-
+.socials__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
 .top-panel {
   display: flex;
   align-items: center;
