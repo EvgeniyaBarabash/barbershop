@@ -450,7 +450,7 @@ html {
 /* Hedear */
 .hero-header {
   position: relative;
-  background-image: url(/images/Slider.jpg);
+  background-image: url(./images/Slider.jpg);
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -677,7 +677,7 @@ html {
 
 /* Услуги и цены */
 .price {
-  background-image: url(/images/img-min.png);
+  background-image: url(./images/img-min.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -910,7 +910,7 @@ html {
 }
 
 .contact {
-  background-image: url(/images/bg-min.png);
+  background-image: url(./images/bg-min.png);
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
