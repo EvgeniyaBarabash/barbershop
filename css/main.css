@@ -656,6 +656,8 @@ html {
 @media screen and (min-width: 767px) {
   .content-box--photo {
     display: flex;
+    -ms-flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
@@ -663,7 +665,7 @@ html {
   color: var(--main-text-color);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .content-box {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -704,6 +706,12 @@ html {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .content-box__label {
+    justify-content: center;
+  }
 }
 
 /* Услуги и цены */
@@ -859,17 +867,22 @@ html {
 }
 
 .team__item {
-  text-align: center;
-  max-width: 370px;
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: 100%;
+}
+
+@media screen and (min-width: 320px) {
+  .team__item {
+    text-align: center;
+    flex-basis: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
     max-width: 450px;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -882,6 +895,12 @@ html {
 .content-box__title--team {
   margin-bottom: 44px;
   color: var(--title-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .content-box__title--team {
+    text-align: center;
+  }
 }
 
 .social__icons {
@@ -916,9 +935,24 @@ html {
   transition: fill var(--transition-duration) var(--timing-function);
 }
 
-.team__item--galery {
-  max-width: 270px;
-  flex-basis: calc((100% - 4 * 30px) / 4);
+@media screen and (min-width: 320px) {
+  .team__item--galery {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__item--galery {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item--galery {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
 }
 
 .content-box__label--galery {
